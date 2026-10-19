@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator" aria-label="Calculator">
+
+    <div class="display" role="group" aria-label="Display">
+      <div class="preview" id="preview" aria-live="polite"></div>
+      <output class="main" id="main">0</output>
+    </div>
+
+    <div class="keys">
+      <button class="key fn"  data-action="clear"     data-keys="Escape,Delete">AC</button>
+      <button class="key fn"  data-action="backspace" data-keys="Backspace" aria-label="Backspace">&#9003;</button>
+      <button class="key fn"  data-action="percent"   data-keys="%" aria-label="Percent">%</button>
+      <button class="key op"  data-op="÷"             data-keys="/" aria-label="Divide">&divide;</button>
+
+      <button class="key" data-digit="7" data-keys="7">7</button>
+      <button class="key" data-digit="8" data-keys="8">8</button>
+      <button class="key" data-digit="9" data-keys="9">9</button>
+      <button class="key op" data-op="×" data-keys="*,x,X" aria-label="Multiply">&times;</button>
+
+      <button class="key" data-digit="4" data-keys="4">4</button>
+      <button class="key" data-digit="5" data-keys="5">5</button>
+      <button class="key" data-digit="6" data-keys="6">6</button>
+      <button class="key op" data-op="−" data-keys="-" aria-label="Subtract">&minus;</button>
+
+      <button class="key" data-digit="1" data-keys="1">1</button>
+      <button class="key" data-digit="2" data-keys="2">2</button>
+      <button class="key" data-digit="3" data-keys="3">3</button>
+      <button class="key op" data-op="+" data-keys="+" aria-label="Add">+</button>
+
+      <button class="key zero" data-digit="0" data-keys="0">0</button>
+      <button class="key" data-action="decimal" data-keys="." aria-label="Decimal point">.</button>
+      <button class="key equals" data-action="equals" data-keys="Enter,=" aria-label="Equals">=</button>
+    </div>
+
+    <p class="hint">Keyboard: 0–9 &nbsp; + − * / &nbsp; Enter &nbsp; Backspace &nbsp; Esc</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
